@@ -42,13 +42,13 @@ int dice(int min_num, int max_num)
 		        current_space = 9;
 		        drinks++;
 		    } else if (current_space == 38) {
-		        current_space = 1;
+		        current_space = 20;
 		        drinks++;
-		    } else if (current_space == 42) {
-		        current_space = 21;
-		        drinks++;
-		    } else if (current_space == 53) {
+		    } else if (current_space == 54) {
 		        current_space = 34;
+		        drinks++;
+		    } else if (current_space == 59) {
+		        current_space = 40;
 		        drinks++;
 		    } else if (current_space == 62) {
 		        current_space = 19;
@@ -59,14 +59,17 @@ int dice(int min_num, int max_num)
 		    } else if (current_space == 67) {
 		        current_space = 51;
 		        drinks++;
+		    } else if (current_space == 81) {
+		        current_space = 63;
+		        drinks++;
 		    } else if (current_space == 84) {
 		        current_space = 28;
 		        drinks++;
 		    } else if (current_space == 87) {
-		        current_space = 36;
+		        current_space = 24;
 		        drinks++;
 		    } else if (current_space == 91) {
-		        current_space = 72;
+		        current_space = 71;
 		        drinks++;
 		    } else if (current_space == 93) {
 		        current_space = 73;
@@ -74,11 +77,8 @@ int dice(int min_num, int max_num)
 		    } else if (current_space == 95) {
 		        current_space = 75;
 		        drinks++;
-		    } else if (current_space == 98) {
-		        current_space = 79;
-		        drinks++;
 		    } else if (current_space == 99) {
-		        current_space = 80;
+		        current_space = 78;
 		        drinks++;
 		    } else if (current_space == 100) {
 		        printf("%d\n", drinks);
@@ -89,10 +89,10 @@ int dice(int min_num, int max_num)
 		        current_space = 100 - (current_space - 100);
 		    } else {
 		        current_space = current_space + dice(1,6);
-			printf("%d\n", current_space);
+			//printf("%d\n", current_space);
 		    }
 		}
 	}
-printf("%d\n", cumulative_drinks / i);
+printf("%d\n", cumulative_drinks/i);
 return 0;
 }
